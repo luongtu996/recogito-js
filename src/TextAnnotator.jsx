@@ -385,6 +385,7 @@ export default class TextAnnotator extends Component {
           <Editor
             ref={this._editor}
             autoPosition={this.props.config.editorAutoPosition}
+            baseOnParent={this.props.config.baseOnParent}
             wrapperEl={this.props.wrapperEl}
             annotation={this.state.selectedAnnotation}
             selectedElement={this.state.selectedDOMElement}
