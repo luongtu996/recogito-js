@@ -94,8 +94,9 @@ export default class TextAnnotator extends Component {
         selectedDOMElement: element
       }));
 
-      if (!selection.isSelection)
+      if (!selection.isSelection) {
         this.props.onAnnotationSelected(selection.clone(), element);
+      }
     } else {
       this.clearState();
     }

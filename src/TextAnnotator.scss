@@ -5,13 +5,34 @@
 }
 
 .r6o-annotation {
-  background-color:rgba(255, 165, 0, 0.2);
-  border-bottom:2px solid orange;
+  --annotation-bg: #E1E1FF;
+  --annotation-border-color: #A0A0C9;
+  --annotation-border-width: 2px;
+
+  background-color: var(--annotation-bg);
+  border-bottom: var(--annotation-border-width) solid var(--annotation-border-color);
   cursor:pointer;
+  &.highlighting-annotation{
+    --annotation-bg: #FDE047;
+    --annotation-border-color: #FACC15;
+  }
+  &.good-annotation{
+    --annotation-bg: #5cb85c;
+    --annotation-border-color: #5cb85c;
+    --annotation-border-width: 0;
+    color: #fff;
+  }
+  &.improve-annotation{
+    --annotation-bg: #d9534f;
+    --annotation-border-color: #d9534f;
+    --annotation-border-width: 0;
+    color: #fff;
+  }
 }
 
 .r6o-selection {
-  background-color:rgba(207, 207, 255, 0.63);
+  background-color:#3367D1;
+  color: #fff;
   cursor:pointer;
 }
 
