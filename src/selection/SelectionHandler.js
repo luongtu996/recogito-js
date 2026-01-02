@@ -73,6 +73,10 @@ export default class SelectionHandler extends EventEmitter {
       } else if (!this.readOnly) {
         const selectedRange = trimRange(selection.getRangeAt(0));
 
+        if(selectedRange.toString().trim().length === 0) {
+          // Ignore whitespace-only selections
+          return;
+        }
         // Make sure the selection is entirely inside this.el
         const { commonAncestorContainer } = selectedRange;
 

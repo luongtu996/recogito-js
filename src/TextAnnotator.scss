@@ -1,20 +1,20 @@
 @import '@recogito/recogito-client-core/themes/default/theme.scss';
 
-.r6o-editor {
-  margin-left:-12px;
-}
+// .r6o-editor {
+//   margin-left:-12px;
+// }
 
 .r6o-annotation {
-  --annotation-bg: #E1E1FF;
-  --annotation-border-color: #A0A0C9;
+  --annotation-bg: rgba(189, 189, 255, 0.5);
+  --annotation-border-color: rgba(160, 160, 201, 0.5);
   --annotation-border-width: 2px;
 
   background-color: var(--annotation-bg);
   border-bottom: var(--annotation-border-width) solid var(--annotation-border-color);
   cursor:pointer;
   &.highlighting-annotation{
-    --annotation-bg: #FDE047;
-    --annotation-border-color: #FACC15;
+    --annotation-bg: rgba(253, 224, 71, 0.5);
+    --annotation-border-color: rgba(250, 204, 21, 0.5);
   }
   &.good-annotation{
     --annotation-bg: #5cb85c;
@@ -28,6 +28,10 @@
     --annotation-border-width: 0;
     color: #fff;
   }
+  // .highlighting-annotation {
+  //   --annotation-bg: #E7DCFF;
+  //   --annotation-border-color: #B185D4;
+  // }
 }
 
 .r6o-selection {
