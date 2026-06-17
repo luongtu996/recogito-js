@@ -1,80 +1,195 @@
   [
-    { 
+    {
       "@context": "http://www.w3.org/ns/anno.jsonld",
       "id": "#ce0ed291-766b-4763-8e91-90ce1d04e706",
       "type": "Annotation",
-      "body": [{
-        "type": "TextualBody",
-        "value": "This is a comment"
-      }, {
-        "type": "TextualBody",
-        "value": "A Tag",
-        "purpose": "tagging"
-      }, {
-        "type": "TextualBody",
-        "value": "Another Tag",
-        "purpose": "tagging"
-      }],
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "This is a comment"
+        },
+        {
+          "type": "TextualBody",
+          "value": "A Tag",
+          "purpose": "tagging"
+        },
+        {
+          "type": "TextualBody",
+          "value": "Another Tag",
+          "purpose": "tagging"
+        }
+      ],
       "target": {
-        "selector": [{
-          "type": "TextQuoteSelector",
-          "exact": "Troy"
-        }, {
-          "type": "TextPositionSelector",
-          "start": 124,
-          "end": 128
-        }]
+        "selector": [
+          {
+            "type": "TextQuoteSelector",
+            "exact": "Troy"
+          },
+          {
+            "type": "TextPositionSelector",
+            "start": 124,
+            "end": 128
+          }
+        ]
       }
-    }, {
+    },
+    {
       "@context": "http://www.w3.org/ns/anno.jsonld",
       "id": "#447d4bea-08dc-4bd0-ae51-31f5ed7a95a0",
       "type": "Annotation",
-      "body": [{
-        "type": "TextualBody",
-        "value": "Another comment"
-      }],
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "Another comment"
+        }
+      ],
       "target": {
-        "selector": [{
-          "type": "TextQuoteSelector",
-          "exact": "death in battle"
-        }, {
-          "type": "TextPositionSelector",
-          "start": 646,
-          "end": 661
-        }]
+        "selector": [
+          {
+            "type": "TextQuoteSelector",
+            "exact": "death in battle"
+          },
+          {
+            "type": "TextPositionSelector",
+            "start": 646,
+            "end": 661
+          }
+        ]
       }
-    }, {
+    },
+    {
       "@context": "http://www.w3.org/ns/anno.jsonld",
       "id": "#d7197c87-b45d-4217-9c4f-27573030448f",
       "type": "Annotation",
-      "body": [{
-        "type": "TextualBody",
-        "value": "Comment..."
-      }],
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "Comment..."
+        }
+      ],
       "target": {
-        "selector": [{
-          "type": "TextQuoteSelector",
-          "exact": "Ithaca"
-        }, {
-          "type": "TextPositionSelector",
-          "start": 963,
-          "end": 970
-        }]
+        "selector": [
+          {
+            "type": "TextQuoteSelector",
+            "exact": "Ithaca"
+          },
+          {
+            "type": "TextPositionSelector",
+            "start": 963,
+            "end": 970
+          }
+        ]
       }
-    }, { 
+    },
+    {
       "@context": "http://www.w3.org/ns/anno.jsonld",
       "id": "#9ba844a7-e8ec-4127-ad12-1f7f16a240c6",
       "type": "Annotation",
       "motivation": "linking",
-      "body": [{
-        "type": "TextualBody",
-        "value": "isRelatedTo",
-        "purpose": "tagging"
-      }],
-      "target": [{
-        "id": "#ce0ed291-766b-4763-8e91-90ce1d04e706"
-      }, {
-        "id": "#447d4bea-08dc-4bd0-ae51-31f5ed7a95a0"
-      }]
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "isRelatedTo",
+          "purpose": "tagging"
+        }
+      ],
+      "target": [
+        {
+          "id": "#ce0ed291-766b-4763-8e91-90ce1d04e706"
+        },
+        {
+          "id": "#447d4bea-08dc-4bd0-ae51-31f5ed7a95a0"
+        }
+      ]
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "type": "Annotation",
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "grammar",
+          "purpose": "tagging"
+        },
+        {
+          "type": "TextualBody",
+          "value": "fff",
+          "purpose": "commenting"
+        }
+      ],
+      "target": {
+        "selector": [
+          {
+            "type": "TextQuoteSelector",
+            "exact": "reachin"
+          },
+          {
+            "type": "TextPositionSelector",
+            "start": 508,
+            "end": 515
+          }
+        ]
+      },
+      "id": "#e6c97abe-9422-43ee-a042-017b84dd722f"
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "type": "Annotation",
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "spelling",
+          "purpose": "tagging"
+        },
+        {
+          "type": "TextualBody",
+          "value": "fff",
+          "purpose": "commenting"
+        }
+      ],
+      "target": {
+        "selector": [
+          {
+            "type": "TextQuoteSelector",
+            "exact": ", too, about all th"
+          },
+          {
+            "type": "TextPositionSelector",
+            "start": 530,
+            "end": 549
+          }
+        ]
+      },
+      "id": "#e4e2b87e-1966-4f2c-a040-eb8a7d27cb2c"
+    },
+    {
+      "@context": "http://www.w3.org/ns/anno.jsonld",
+      "type": "Annotation",
+      "body": [
+        {
+          "type": "TextualBody",
+          "value": "clarity",
+          "purpose": "tagging"
+        },
+        {
+          "type": "TextualBody",
+          "value": "gg",
+          "purpose": "commenting"
+        }
+      ],
+      "target": {
+        "selector": [
+          {
+            "type": "TextQuoteSelector",
+            "exact": "e. Tell me, too,"
+          },
+          {
+            "type": "TextPositionSelector",
+            "start": 520,
+            "end": 536
+          }
+        ]
+      },
+      "id": "#4bd07084-f3e5-446d-b704-dc035d70a7ef"
     }
   ]

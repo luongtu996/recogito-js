@@ -5,9 +5,25 @@
 }
 
 .r6o-annotation {
-  background-color:rgba(255, 165, 0, 0.2);
-  border-bottom:2px solid orange;
+  --annotation-bg: rgba(225, 225, 255, 0.8);
+  background-color: var(--annotation-bg);
   cursor:pointer;
+  
+  &.grammar {
+    --annotation-bg: rgba(255, 237, 204, 0.4);
+  }
+  &.writing-clarity {
+    --annotation-bg: rgba(148, 222, 255, 0.4);
+  }
+  &.spelling {
+    --annotation-bg: rgba(255, 180, 185, 0.4);
+  }
+  &.general-feedback {
+    --annotation-bg: rgba(198, 169, 255, 0.4);
+  }
+  &.good-point {
+    --annotation-bg: rgba(180, 255, 194, 0.4);
+  }
 }
 
 .r6o-selection {
